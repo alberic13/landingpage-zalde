@@ -88,6 +88,9 @@ input, textarea {
 }
 
 @media (max-width: 768px) {
+  .container {
+    padding: 0 16px;
+  }
   .section {
     padding: 40px 0;
   }

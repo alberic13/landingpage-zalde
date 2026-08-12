@@ -12,6 +12,9 @@ const CLIENT_LOGOS = [
 ];
 
 export default function ClientsSection() {
+  // Duplicate logos list for infinite seamless looping
+  const doubleLogos = [...CLIENT_LOGOS, ...CLIENT_LOGOS];
+
   return (
     <section className="section" id="clients">
       <div className={`container ${styles.clientsContainer}`}>
@@ -22,19 +25,22 @@ export default function ClientsSection() {
           </p>
         </div>
 
-        <div className={styles.logosRow}>
-          {CLIENT_LOGOS.map((client) => (
-            <div key={client.id} className={styles.logoItem} title={client.name}>
-              <Image
-                src={client.src}
-                alt={client.name}
-                width={48}
-                height={48}
-                style={{ width: "48px", height: "48px" }}
-                className={styles.clientSvg}
-              />
-            </div>
-          ))}
+        {/* Infinite Scroll Logo Carousel */}
+        <div className={styles.carouselContainer}>
+          <div className={styles.carouselTrack}>
+            {doubleLogos.map((client, index) => (
+              <div key={`${client.id}-${index}`} className={styles.logoItem} title={client.name}>
+                <Image
+                  src={client.src}
+                  alt={client.name}
+                  width={48}
+                  height={48}
+                  style={{ width: "48px", height: "48px" }}
+                  className={styles.clientSvg}
+                />
+              </div>
+            ))}
+          </div>
         </div>
       </div>
     </section>

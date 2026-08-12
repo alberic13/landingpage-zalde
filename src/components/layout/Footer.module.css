@@ -1,6 +1,6 @@
 .footer {
-  background-color: var(--brand-secondary);
-  color: var(--neutral-silver);
+  background-color: #448552;
+  color: #ffffff;
   padding: 64px 0 48px 0;
 }
 
@@ -19,20 +19,20 @@
 .logoLink {
   display: flex;
   align-items: center;
-  gap: 8px;
+  gap: 10px;
+  text-decoration: none;
 }
 
 .logoText {
   font-size: 26px;
   font-weight: 700;
-  color: var(--neutral-white);
+  color: #ffffff;
 }
 
 .copyrightBox {
   font-size: 14px;
-  color: var(--neutral-silver);
+  color: rgba(255, 255, 255, 0.85);
   line-height: 1.5;
-  opacity: 0.8;
 }
 
 .socialIcons {
@@ -45,23 +45,26 @@
   width: 36px;
   height: 36px;
   border-radius: 50%;
-  background-color: rgba(255, 255, 255, 0.1);
+  background-color: rgba(255, 255, 255, 0.15);
+  border: 1px solid rgba(255, 255, 255, 0.25);
   display: flex;
   align-items: center;
   justify-content: center;
-  color: var(--neutral-white);
+  color: #ffffff;
   transition: all var(--transition-fast);
 }
 
 .socialIcon:hover {
-  background-color: var(--brand-primary);
+  background-color: #ffffff;
+  color: #89939e;
+  border-color: #ffffff;
   transform: translateY(-2px);
 }
 
 .colTitle {
   font-size: 20px;
   font-weight: 600;
-  color: var(--neutral-white);
+  color: #ffffff;
   margin-bottom: 24px;
 }
 
@@ -74,14 +77,14 @@
 
 .linksList a {
   font-size: 14px;
-  color: var(--neutral-silver);
-  opacity: 0.8;
-  transition: opacity var(--transition-fast), color var(--transition-fast);
+  color: rgba(255, 255, 255, 0.85);
+  text-decoration: none;
+  transition: color var(--transition-fast), opacity var(--transition-fast);
 }
 
 .linksList a:hover {
+  color: #ffffff;
   opacity: 1;
-  color: var(--brand-primary);
 }
 
 .subscribeCol {
@@ -99,20 +102,21 @@
   width: 100%;
   padding: 12px 44px 12px 16px;
   border-radius: var(--radius-md);
-  border: none;
-  background-color: rgba(255, 255, 255, 0.15);
-  color: var(--neutral-white);
+  border: 1px solid rgba(255, 255, 255, 0.35);
+  background-color: rgba(255, 255, 255, 0.2);
+  color: #ffffff;
   font-size: 14px;
   outline: none;
-  transition: background-color var(--transition-fast);
+  transition: background-color var(--transition-fast), border-color var(--transition-fast);
 }
 
 .emailInput::placeholder {
-  color: var(--text-gray-300);
+  color: rgba(255, 255, 255, 0.75);
 }
 
 .emailInput:focus {
-  background-color: rgba(255, 255, 255, 0.25);
+  background-color: rgba(255, 255, 255, 0.3);
+  border-color: #ffffff;
 }
 
 .sendButton {
@@ -120,15 +124,18 @@
   right: 12px;
   top: 50%;
   transform: translateY(-50%);
-  color: var(--neutral-white);
+  color: #ffffff;
   display: flex;
   align-items: center;
   justify-content: center;
-  transition: color var(--transition-fast);
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  transition: opacity var(--transition-fast);
 }
 
 .sendButton:hover {
-  color: var(--brand-primary);
+  opacity: 0.8;
 }
 
 @media (max-width: 968px) {
