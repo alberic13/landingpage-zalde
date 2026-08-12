@@ -1,56 +1,77 @@
 .heroSection {
   background-color: var(--neutral-silver);
-  padding: 96px 0 48px 0;
+  padding: 96px 0 64px 0;
   position: relative;
-  overflow: hidden;
 }
 
 .heroContainer {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 48px;
+  gap: 104px;
 }
 
 .heroContent {
   flex: 1;
-  max-width: 650px;
+  max-width: 657px;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
 }
 
 .heroTitle {
   font-size: 64px;
   font-weight: 600;
-  line-height: 1.15;
+  line-height: 76px;
   color: var(--neutral-d-grey);
-  margin-bottom: 16px;
-  letter-spacing: -1px;
+  letter-spacing: -0.5px;
+}
+
+.greenText {
+  color: var(--brand-primary);
 }
 
 .heroSubtitle {
   font-size: 16px;
   font-weight: 400;
-  line-height: 1.5;
+  line-height: 24px;
   color: var(--neutral-grey);
-  margin-bottom: 32px;
+  margin-top: -16px;
+}
+
+.heroCta {
+  margin-top: 0;
+}
+
+.registerBtn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 14px 32px;
+  background-color: var(--brand-primary);
+  color: var(--neutral-white);
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  border-radius: 4px;
+  text-decoration: none;
+  transition: background-color var(--transition-fast);
+}
+
+.registerBtn:hover {
+  background-color: #388e3c;
 }
 
 .heroImageWrapper {
-  flex: 1;
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
+  flex-shrink: 0;
+  width: 391px;
+  height: 407px;
 }
 
 .heroImage {
   width: 100%;
-  max-width: 390px;
-  height: auto;
+  height: 100%;
   object-fit: contain;
-  transition: transform var(--transition-normal);
-}
-
-.heroImage:hover {
-  transform: translateY(-6px);
 }
 
 .paginationDots {
@@ -58,14 +79,14 @@
   align-items: center;
   justify-content: center;
   gap: 8px;
-  margin-top: 48px;
+  margin-top: 52px;
 }
 
 .dot {
   width: 10px;
   height: 10px;
   border-radius: 50%;
-  background-color: var(--brand-primary);
+  background-color: #4caf4f;
   opacity: 0.3;
   cursor: pointer;
   transition: all var(--transition-fast);
@@ -73,19 +94,22 @@
 
 .activeDot {
   opacity: 1;
-  width: 10px;
-  height: 10px;
 }
 
 @media (max-width: 1024px) {
+  .heroContainer {
+    gap: 48px;
+  }
+
   .heroTitle {
     font-size: 48px;
+    line-height: 58px;
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 868px) {
   .heroSection {
-    padding: 48px 0 32px 0;
+    padding: 48px 0;
   }
 
   .heroContainer {
@@ -95,18 +119,16 @@
   }
 
   .heroContent {
+    align-items: center;
     max-width: 100%;
   }
 
-  .heroTitle {
-    font-size: 36px;
+  .heroSubtitle {
+    margin-top: 0;
   }
 
   .heroImageWrapper {
-    justify-content: center;
-  }
-
-  .heroImage {
-    max-width: 280px;
+    width: 280px;
+    height: 290px;
   }
 }

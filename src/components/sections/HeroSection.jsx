@@ -8,14 +8,14 @@ export default function HeroSection() {
       <div className={`container ${styles.heroContainer}`}>
         <div className={styles.heroContent}>
           <h1 className={styles.heroTitle}>
-            Lessons and insights{" "}
-            <span className="text-primary-green">from 8 years</span>
+            Lessons and insights <br />
+            <span className={styles.greenText}>from 8 years</span>
           </h1>
           <p className={styles.heroSubtitle}>
             Where to grow your business as a photographer: site or social media?
           </p>
           <div className={styles.heroCta}>
-            <Link href="#register" className="btn btn-primary" id="hero-register-btn">
+            <Link href="#register" className={styles.registerBtn} id="hero-register-btn">
               Register
             </Link>
           </div>
@@ -25,7 +25,7 @@ export default function HeroSection() {
           <Image
             src="/images/hero_illustration.svg"
             alt="Nexcent Hero Illustration"
-            width={390}
+            width={391}
             height={407}
             style={{ width: "auto", height: "auto" }}
             priority
