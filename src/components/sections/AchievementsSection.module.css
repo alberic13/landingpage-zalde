@@ -71,6 +71,11 @@
   flex-shrink: 0;
 }
 
+.statText {
+  display: flex;
+  flex-direction: column;
+}
+
 .statNumber {
   font-size: 28px;
   font-weight: 700;
@@ -105,16 +110,24 @@
 
   .rightGrid {
     width: 100%;
+    max-width: 320px;
+    margin: 0 auto;
+    grid-template-columns: 1fr;
     gap: 24px;
   }
 
   .statItem {
-    justify-content: center;
+    justify-content: flex-start;
+    padding: 8px 16px;
+  }
+
+  .statText {
+    text-align: left;
   }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 360px) {
   .rightGrid {
-    grid-template-columns: 1fr;
+    max-width: 100%;
   }
 }
