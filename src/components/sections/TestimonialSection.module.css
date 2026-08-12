@@ -1,21 +1,21 @@
 .testimonialSection {
   background-color: var(--neutral-silver);
-  padding: 64px 0;
+  padding: 48px 0;
 }
 
 .testimonialContainer {
   display: flex;
   align-items: center;
-  gap: 54px;
+  gap: 78px;
 }
 
 .avatarWrapper {
   flex-shrink: 0;
-  width: 280px;
-  height: 280px;
+  width: 326px;
+  height: 326px;
   border-radius: 8px;
   overflow: hidden;
-  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.15);
+  box-shadow: 0px 8px 16px 0px rgba(171, 190, 209, 0.4);
   background-color: #0b0f19;
 }
 
@@ -34,33 +34,36 @@
 }
 
 .quoteText {
-  font-size: 14px;
-  line-height: 1.6;
+  font-size: 16px;
+  line-height: 24px;
   color: var(--neutral-grey);
   font-weight: 500;
 }
 
 .authorMeta {
-  margin-top: 8px;
+  margin-top: 4px;
 }
 
 .authorName {
-  font-size: 18px;
+  font-size: 20px;
   font-weight: 600;
+  line-height: 28px;
   color: var(--brand-primary);
   margin-bottom: 4px;
 }
 
 .authorRole {
-  font-size: 14px;
+  font-size: 16px;
+  line-height: 24px;
   color: var(--neutral-l-grey);
+  font-weight: 400;
 }
 
 .brandsRow {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 24px;
+  gap: 32px;
   margin-top: 16px;
   flex-wrap: wrap;
 }
@@ -68,43 +71,47 @@
 .logosList {
   display: flex;
   align-items: center;
-  gap: 28.5px;
 }
 
-.logoBadge {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  transition: transform var(--transition-fast);
-}
-
-.logoBadge:hover {
-  transform: translateY(-2px);
-}
-
-.brandSvg {
-  width: 40px;
-  height: 40px;
-  max-width: 40px;
-  max-height: 40px;
-  object-fit: contain;
+.brandLogosSvg {
+  width: 497px;
+  height: 48px;
+  display: block;
+  max-width: 100%;
 }
 
 .meetLink {
   display: inline-flex;
   align-items: center;
   gap: 8px;
-  font-size: 16px;
+  font-size: 20px;
   font-weight: 600;
   color: var(--brand-primary);
   transition: transform var(--transition-fast);
+  text-decoration: none;
 }
 
 .meetLink:hover {
   transform: translateX(4px);
 }
 
-@media (max-width: 968px) {
+@media (max-width: 1024px) {
+  .testimonialContainer {
+    gap: 40px;
+  }
+
+  .avatarWrapper {
+    width: 280px;
+    height: 280px;
+  }
+
+  .brandLogosSvg {
+    width: 100%;
+    height: auto;
+  }
+}
+
+@media (max-width: 868px) {
   .testimonialContainer {
     flex-direction: column;
     text-align: center;
@@ -112,8 +119,8 @@
   }
 
   .avatarWrapper {
-    width: 240px;
-    height: 240px;
+    width: 260px;
+    height: 260px;
   }
 
   .brandsRow {
@@ -122,7 +129,6 @@
 
   .logosList {
     justify-content: center;
-    flex-wrap: wrap;
-    gap: 20px;
+    width: 100%;
   }
 }

@@ -13,9 +13,9 @@ export const metadata = {
   description: "Lessons and insights from 8 years. Where to grow your business as a photographer: site or social media?",
   keywords: "membership management, community software, association software, Nexcent",
   icons: {
-    icon: "/images/nexcent_figma_logo_icon_white.svg",
-    shortcut: "/images/nexcent_figma_logo_icon_white.svg",
-    apple: "/images/nexcent_figma_logo_icon_white.svg",
+    icon: "/images/nexcent_figma_logo_icon.svg",
+    shortcut: "/images/nexcent_figma_logo_icon.svg",
+    apple: "/images/nexcent_figma_logo_icon.svg",
   },
   openGraph: {
     title: "Nexcent",

@@ -11,7 +11,7 @@ export default function Navbar() {
   return (
     <header className={styles.header}>
       <div className={`container ${styles.navContainer}`}>
-        {/* Exact Figma Geometric Logo */}
+        {/* Geometric Logo */}
         <Link href="/" className={styles.logoLink} id="nav-logo">
           <Image
             src="/images/nexcent_figma_logo_icon.svg"
@@ -30,37 +30,40 @@ export default function Navbar() {
           <Link href="#home" className={`${styles.navLink} ${styles.active}`} onClick={() => setIsMobileMenuOpen(false)}>
             Home
           </Link>
-          <Link href="#features" className={styles.navLink} onClick={() => setIsMobileMenuOpen(false)}>
-            Features
+          <Link href="#clients" className={styles.navLink} onClick={() => setIsMobileMenuOpen(false)}>
+            Service
           </Link>
           <Link href="#community" className={styles.navLink} onClick={() => setIsMobileMenuOpen(false)}>
-            Community
+            Feature
           </Link>
           <Link href="#blog" className={styles.navLink} onClick={() => setIsMobileMenuOpen(false)}>
-            Blog
+            Product
           </Link>
-          <Link href="#pricing" className={styles.navLink} onClick={() => setIsMobileMenuOpen(false)}>
-            Pricing
+          <Link href="#testimonial" className={styles.navLink} onClick={() => setIsMobileMenuOpen(false)}>
+            Testimonial
+          </Link>
+          <Link href="#faq" className={styles.navLink} onClick={() => setIsMobileMenuOpen(false)}>
+            FAQ
           </Link>
 
-          {/* Mobile CTA Button */}
+          {/* Mobile CTA Buttons */}
           <div className={styles.mobileCta}>
-            <Link href="#register" className={styles.registerBtn} onClick={() => setIsMobileMenuOpen(false)}>
-              <span>Register Now</span>
-              <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M3.33331 8H12.6666M12.6666 8L7.99998 3.33334M12.6666 8L7.99998 12.6667" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
-              </svg>
+            <Link href="#login" className={styles.loginBtn} onClick={() => setIsMobileMenuOpen(false)}>
+              Login
+            </Link>
+            <Link href="#signup" className={styles.signUpBtn} onClick={() => setIsMobileMenuOpen(false)}>
+              Sign up
             </Link>
           </div>
         </nav>
 
-        {/* Right CTA Action */}
+        {/* Right CTA Action Buttons */}
         <div className={styles.navActions}>
-          <Link href="#register" className={styles.registerBtn} id="header-register-btn">
-            <span>Register Now</span>
-            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M3.33331 8H12.6666M12.6666 8L7.99998 3.33334M12.6666 8L7.99998 12.6667" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
-            </svg>
+          <Link href="#login" className={styles.loginBtn} id="header-login-btn">
+            Login
+          </Link>
+          <Link href="#signup" className={styles.signUpBtn} id="header-signup-btn">
+            Sign up
           </Link>
 
           {/* Hamburger Mobile Toggle */}

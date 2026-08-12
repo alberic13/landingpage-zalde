@@ -2,26 +2,18 @@ import Image from "next/image";
 import Link from "next/link";
 import styles from "./TestimonialSection.module.css";
 
-const TESTIMONIAL_LOGOS = [
-  { id: 1, name: "Client Logo 1", src: "/images/client_logo_1.svg" },
-  { id: 2, name: "Client Logo 2", src: "/images/client_logo_2.svg" },
-  { id: 3, name: "Client Logo 3", src: "/images/client_logo_3.svg" },
-  { id: 4, name: "Client Logo 4", src: "/images/client_logo_4.svg" },
-  { id: 5, name: "Client Logo 5", src: "/images/client_logo_5.svg" },
-  { id: 6, name: "Client Logo 6", src: "/images/client_logo_6.svg" },
-];
-
 export default function TestimonialSection() {
   return (
-    <section className={styles.testimonialSection} id="testimonials">
+    <section className={styles.testimonialSection} id="testimonial">
       <div className={`container ${styles.testimonialContainer}`}>
-        {/* Tesla 3D Emblem Image */}
+        {/* Tesla Emblem Image */}
         <div className={styles.avatarWrapper}>
           <Image
             src="/images/testimonial_tesla.png"
-            alt="Tesla 3D Emblem"
-            width={280}
-            height={280}
+            alt="Tesla Emblem"
+            width={326}
+            height={326}
+            style={{ width: "100%", height: "100%" }}
             className={styles.avatar}
           />
         </div>
@@ -41,23 +33,19 @@ export default function TestimonialSection() {
 
           <div className={styles.brandsRow}>
             <div className={styles.logosList}>
-              {TESTIMONIAL_LOGOS.map((logo) => (
-                <div key={logo.id} className={styles.logoBadge} title={logo.name}>
-                  <Image
-                    src={logo.src}
-                    alt={logo.name}
-                    width={40}
-                    height={40}
-                    style={{ width: "40px", height: "40px" }}
-                    className={styles.brandSvg}
-                  />
-                </div>
-              ))}
+              <Image
+                src="/images/testimonial_brand_logos.svg"
+                alt="Client Brand Logos"
+                width={497}
+                height={48}
+                style={{ width: "497px", height: "48px" }}
+                className={styles.brandLogosSvg}
+              />
             </div>
 
             <Link href="#all-customers" className={styles.meetLink} id="meet-all-customers-link">
               <span>Meet all customers</span>
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M5 12H19M19 12L12 5M19 12L12 19" stroke="#4CAF4F" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
               </svg>
             </Link>

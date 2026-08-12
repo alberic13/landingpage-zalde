@@ -1,6 +1,6 @@
 .footer {
-  background-color: #448552;
-  color: #ffffff;
+  background-color: var(--brand-secondary);
+  color: var(--neutral-silver);
   padding: 64px 0 48px 0;
 }
 
@@ -23,48 +23,41 @@
   text-decoration: none;
 }
 
+.logoSvg {
+  width: 44px;
+  height: 30px;
+}
+
 .logoText {
-  font-size: 26px;
+  font-size: 24px;
   font-weight: 700;
-  color: #ffffff;
+  color: var(--neutral-white);
+  letter-spacing: -0.3px;
 }
 
 .copyrightBox {
   font-size: 14px;
-  color: rgba(255, 255, 255, 0.85);
+  color: var(--neutral-silver);
   line-height: 1.5;
+  opacity: 0.9;
 }
 
 .socialIcons {
   display: flex;
   align-items: center;
-  gap: 12px;
+  margin-top: 8px;
 }
 
-.socialIcon {
-  width: 36px;
-  height: 36px;
-  border-radius: 50%;
-  background-color: rgba(255, 255, 255, 0.15);
-  border: 1px solid rgba(255, 255, 255, 0.25);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: #ffffff;
-  transition: all var(--transition-fast);
-}
-
-.socialIcon:hover {
-  background-color: #ffffff;
-  color: #89939e;
-  border-color: #ffffff;
-  transform: translateY(-2px);
+.socialIconsSvg {
+  width: 176px;
+  height: 32px;
+  display: block;
 }
 
 .colTitle {
   font-size: 20px;
   font-weight: 600;
-  color: #ffffff;
+  color: var(--neutral-white);
   margin-bottom: 24px;
 }
 
@@ -77,14 +70,15 @@
 
 .linksList a {
   font-size: 14px;
-  color: rgba(255, 255, 255, 0.85);
+  color: var(--neutral-silver);
+  opacity: 0.9;
   text-decoration: none;
-  transition: color var(--transition-fast), opacity var(--transition-fast);
+  transition: opacity var(--transition-fast), color var(--transition-fast);
 }
 
 .linksList a:hover {
-  color: #ffffff;
   opacity: 1;
+  color: var(--brand-primary);
 }
 
 .subscribeCol {
@@ -102,21 +96,20 @@
   width: 100%;
   padding: 12px 44px 12px 16px;
   border-radius: var(--radius-md);
-  border: 1px solid rgba(255, 255, 255, 0.35);
-  background-color: rgba(255, 255, 255, 0.2);
-  color: #ffffff;
+  border: none;
+  background-color: rgba(255, 255, 255, 0.15);
+  color: var(--neutral-white);
   font-size: 14px;
   outline: none;
-  transition: background-color var(--transition-fast), border-color var(--transition-fast);
+  transition: background-color var(--transition-fast);
 }
 
 .emailInput::placeholder {
-  color: rgba(255, 255, 255, 0.75);
+  color: var(--text-gray-300);
 }
 
 .emailInput:focus {
-  background-color: rgba(255, 255, 255, 0.3);
-  border-color: #ffffff;
+  background-color: rgba(255, 255, 255, 0.25);
 }
 
 .sendButton {
@@ -124,18 +117,18 @@
   right: 12px;
   top: 50%;
   transform: translateY(-50%);
-  color: #ffffff;
+  color: var(--neutral-white);
   display: flex;
   align-items: center;
   justify-content: center;
   background: transparent;
   border: none;
   cursor: pointer;
-  transition: opacity var(--transition-fast);
+  transition: color var(--transition-fast);
 }
 
 .sendButton:hover {
-  opacity: 0.8;
+  color: var(--brand-primary);
 }
 
 @media (max-width: 968px) {
