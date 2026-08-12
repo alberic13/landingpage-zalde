@@ -9,11 +9,16 @@ const inter = Inter({
 });
 
 export const metadata = {
-  title: "Nexcent - Manage your entire community in a single system",
+  title: "Nexcent",
   description: "Lessons and insights from 8 years. Where to grow your business as a photographer: site or social media?",
   keywords: "membership management, community software, association software, Nexcent",
+  icons: {
+    icon: "/images/nexcent_figma_logo_icon_white.svg",
+    shortcut: "/images/nexcent_figma_logo_icon_white.svg",
+    apple: "/images/nexcent_figma_logo_icon_white.svg",
+  },
   openGraph: {
-    title: "Nexcent - Minimal Landing Page",
+    title: "Nexcent",
     description: "Manage your entire community in a single system",
     type: "website",
   },
