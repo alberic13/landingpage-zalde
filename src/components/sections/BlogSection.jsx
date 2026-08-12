@@ -43,9 +43,9 @@ export default function BlogSection() {
                 <Image
                   src={post.image}
                   alt={post.title}
-                  width={368}
-                  height={286}
-                  style={{ width: "100%", height: "auto" }}
+                  fill
+                  loading="eager"
+                  sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 368px"
                   className={styles.cardImage}
                 />
               </div>
