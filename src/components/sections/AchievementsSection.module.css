@@ -1,0 +1,101 @@
+.achievementsSection {
+  background-color: var(--neutral-silver);
+  padding: 64px 0;
+}
+
+.achievementsContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 48px;
+}
+
+.leftCol {
+  flex: 1;
+  max-width: 500px;
+}
+
+.title {
+  font-size: 36px;
+  font-weight: 600;
+  color: var(--neutral-d-grey);
+  line-height: 1.25;
+  margin-bottom: 8px;
+}
+
+.subtitle {
+  font-size: 16px;
+  color: var(--text-gray-900);
+}
+
+.rightGrid {
+  flex: 1;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 40px 32px;
+}
+
+.statItem {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.iconBox {
+  width: 48px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.statIconSvg {
+  width: 48px;
+  height: 48px;
+  object-fit: contain;
+  flex-shrink: 0;
+}
+
+.statNumber {
+  font-size: 28px;
+  font-weight: 700;
+  color: var(--neutral-d-grey);
+  line-height: 1.2;
+}
+
+.statLabel {
+  font-size: 16px;
+  color: var(--neutral-grey);
+}
+
+@media (max-width: 868px) {
+  .achievementsContainer {
+    flex-direction: column;
+    text-align: center;
+    gap: 32px;
+  }
+
+  .leftCol {
+    max-width: 100%;
+  }
+
+  .title {
+    font-size: 28px;
+  }
+
+  .rightGrid {
+    width: 100%;
+    gap: 24px;
+  }
+
+  .statItem {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .rightGrid {
+    grid-template-columns: 1fr;
+  }
+}

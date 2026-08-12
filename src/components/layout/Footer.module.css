@@ -1,0 +1,145 @@
+.footer {
+  background-color: var(--brand-secondary);
+  color: var(--neutral-silver);
+  padding: 64px 0 48px 0;
+}
+
+.footerContainer {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 1.5fr;
+  gap: 48px;
+}
+
+.companyCol {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.logoLink {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.logoText {
+  font-size: 26px;
+  font-weight: 700;
+  color: var(--neutral-white);
+}
+
+.copyrightBox {
+  font-size: 14px;
+  color: var(--neutral-silver);
+  line-height: 1.5;
+  opacity: 0.8;
+}
+
+.socialIcons {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.socialIcon {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--neutral-white);
+  transition: all var(--transition-fast);
+}
+
+.socialIcon:hover {
+  background-color: var(--brand-primary);
+  transform: translateY(-2px);
+}
+
+.colTitle {
+  font-size: 20px;
+  font-weight: 600;
+  color: var(--neutral-white);
+  margin-bottom: 24px;
+}
+
+.linksList {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.linksList a {
+  font-size: 14px;
+  color: var(--neutral-silver);
+  opacity: 0.8;
+  transition: opacity var(--transition-fast), color var(--transition-fast);
+}
+
+.linksList a:hover {
+  opacity: 1;
+  color: var(--brand-primary);
+}
+
+.subscribeCol {
+  display: flex;
+  flex-direction: column;
+}
+
+.emailForm {
+  position: relative;
+  width: 100%;
+  max-width: 280px;
+}
+
+.emailInput {
+  width: 100%;
+  padding: 12px 44px 12px 16px;
+  border-radius: var(--radius-md);
+  border: none;
+  background-color: rgba(255, 255, 255, 0.15);
+  color: var(--neutral-white);
+  font-size: 14px;
+  outline: none;
+  transition: background-color var(--transition-fast);
+}
+
+.emailInput::placeholder {
+  color: var(--text-gray-300);
+}
+
+.emailInput:focus {
+  background-color: rgba(255, 255, 255, 0.25);
+}
+
+.sendButton {
+  position: absolute;
+  right: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: var(--neutral-white);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: color var(--transition-fast);
+}
+
+.sendButton:hover {
+  color: var(--brand-primary);
+}
+
+@media (max-width: 968px) {
+  .footerContainer {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 36px;
+  }
+}
+
+@media (max-width: 580px) {
+  .footerContainer {
+    grid-template-columns: 1fr;
+  }
+}

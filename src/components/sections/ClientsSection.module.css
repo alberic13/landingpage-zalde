@@ -1,0 +1,72 @@
+.clientsContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 32px;
+  text-align: center;
+}
+
+.headerArea {
+  max-width: 600px;
+}
+
+.sectionTitle {
+  font-size: 36px;
+  font-weight: 600;
+  color: var(--neutral-d-grey);
+  margin-bottom: 8px;
+}
+
+.sectionSubtitle {
+  font-size: 16px;
+  color: var(--neutral-grey);
+}
+
+.logosRow {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  gap: 24px;
+  padding: 16px 0;
+  flex-wrap: wrap;
+}
+
+.logoItem {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 8px;
+  border-radius: var(--radius-sm);
+  transition: all var(--transition-fast);
+  cursor: pointer;
+}
+
+.clientSvg {
+  width: 48px;
+  height: 48px;
+  max-width: 48px;
+  max-height: 48px;
+  object-fit: contain;
+  transition: transform var(--transition-fast), filter var(--transition-fast);
+}
+
+.logoItem:hover {
+  transform: translateY(-4px);
+}
+
+.logoItem:hover .clientSvg {
+  transform: scale(1.1);
+  filter: drop-shadow(0px 4px 8px rgba(76, 175, 79, 0.3));
+}
+
+@media (max-width: 768px) {
+  .sectionTitle {
+    font-size: 28px;
+  }
+
+  .logosRow {
+    justify-content: center;
+    gap: 32px;
+  }
+}

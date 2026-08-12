@@ -1,0 +1,31 @@
+.ctaSection {
+  background-color: var(--neutral-silver);
+  padding: 64px 0;
+  text-align: center;
+}
+
+.ctaContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 32px;
+}
+
+.ctaHeading {
+  font-size: 56px;
+  font-weight: 600;
+  color: var(--neutral-black);
+  line-height: 1.15;
+  letter-spacing: -0.5px;
+}
+
+.buttonWrapper {
+  display: flex;
+  justify-content: center;
+}
+
+@media (max-width: 768px) {
+  .ctaHeading {
+    font-size: 36px;
+  }
+}
