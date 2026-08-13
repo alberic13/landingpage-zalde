@@ -20,7 +20,6 @@ export default function Navbar() {
             height={24}
             style={{ width: "35px", height: "auto" }}
             className={styles.logoSvg}
-            priority
           />
           <span className={styles.logoText}>Nexcent</span>
         </Link>

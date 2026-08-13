@@ -44,7 +44,7 @@ export default function BlogSection() {
                   src={post.image}
                   alt={post.title}
                   fill
-                  loading="eager"
+                  loading="lazy"
                   sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 368px"
                   className={styles.cardImage}
                 />
