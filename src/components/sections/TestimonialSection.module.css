@@ -71,13 +71,34 @@
 .logosList {
   display: flex;
   align-items: center;
+  gap: 41px;
 }
 
-.brandLogosSvg {
-  width: 497px;
+.brandLogoItem {
+  width: 48px;
   height: 48px;
+  border-radius: 8px;
+  background-color: #F5F7FA;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.25s ease-in-out;
+  flex-shrink: 0;
+}
+
+.brandLogoItem:hover,
+.activeLogo {
+  background-color: #E8F5E9;
+  transform: translateY(-3px) scale(1.08);
+  box-shadow: 0px 4px 12px rgba(76, 175, 79, 0.25);
+}
+
+.brandSvg {
+  width: 48px;
+  height: 48px;
+  object-fit: contain;
   display: block;
-  max-width: 100%;
 }
 
 .meetLink {
@@ -95,6 +116,12 @@
   transform: translateX(4px);
 }
 
+@media (max-width: 1200px) {
+  .logosList {
+    gap: 24px;
+  }
+}
+
 @media (max-width: 1024px) {
   .testimonialContainer {
     gap: 40px;
@@ -105,9 +132,8 @@
     height: 280px;
   }
 
-  .brandLogosSvg {
-    width: 100%;
-    height: auto;
+  .logosList {
+    gap: 20px;
   }
 }
 
@@ -125,10 +151,13 @@
 
   .brandsRow {
     justify-content: center;
+    gap: 24px;
   }
 
   .logosList {
     justify-content: center;
-    width: 100%;
+    gap: 16px;
+    flex-wrap: wrap;
   }
 }
+

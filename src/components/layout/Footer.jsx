@@ -39,14 +39,70 @@ export default function Footer() {
           </div>
 
           <div className={styles.socialIcons}>
-            <Image
-              src="/images/footer_social_icons.svg"
-              alt="Social Media Icons"
-              width={176}
-              height={32}
-              style={{ width: "176px", height: "auto" }}
-              className={styles.socialIconsSvg}
-            />
+            <a
+              href="https://instagram.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              className={styles.socialLink}
+              aria-label="Instagram"
+              id="footer-social-instagram"
+            >
+              <Image
+                src="/images/footer_social_instagram.svg"
+                alt="Instagram"
+                width={32}
+                height={32}
+                className={styles.socialSvg}
+              />
+            </a>
+            <a
+              href="https://dribbble.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              className={styles.socialLink}
+              aria-label="Dribbble"
+              id="footer-social-dribbble"
+            >
+              <Image
+                src="/images/footer_social_dribbble.svg"
+                alt="Dribbble"
+                width={32}
+                height={32}
+                className={styles.socialSvg}
+              />
+            </a>
+            <a
+              href="https://twitter.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              className={styles.socialLink}
+              aria-label="Twitter"
+              id="footer-social-twitter"
+            >
+              <Image
+                src="/images/footer_social_twitter.svg"
+                alt="Twitter"
+                width={32}
+                height={32}
+                className={styles.socialSvg}
+              />
+            </a>
+            <a
+              href="https://youtube.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              className={styles.socialLink}
+              aria-label="YouTube"
+              id="footer-social-youtube"
+            >
+              <Image
+                src="/images/footer_social_youtube.svg"
+                alt="YouTube"
+                width={32}
+                height={32}
+                className={styles.socialSvg}
+              />
+            </a>
           </div>
         </div>
 

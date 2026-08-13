@@ -1,8 +1,22 @@
+"use client";
+
+import { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import styles from "./TestimonialSection.module.css";
 
+const TESTIMONIAL_LOGOS = [
+  { id: 1, name: "Brand Logo 1", src: "/images/testimonial_brand_1.svg" },
+  { id: 2, name: "Brand Logo 2", src: "/images/testimonial_brand_2.svg" },
+  { id: 3, name: "Brand Logo 3", src: "/images/testimonial_brand_3.svg" },
+  { id: 4, name: "Brand Logo 4", src: "/images/testimonial_brand_4.svg" },
+  { id: 5, name: "Brand Logo 5", src: "/images/testimonial_brand_5.svg" },
+  { id: 6, name: "Brand Logo 6", src: "/images/testimonial_brand_6.svg" },
+];
+
 export default function TestimonialSection() {
+  const [activeLogoId, setActiveLogoId] = useState(1);
+
   return (
     <section className={styles.testimonialSection} id="testimonial">
       <div className={`container ${styles.testimonialContainer}`}>
@@ -33,14 +47,26 @@ export default function TestimonialSection() {
 
           <div className={styles.brandsRow}>
             <div className={styles.logosList}>
-              <Image
-                src="/images/testimonial_brand_logos.svg"
-                alt="Client Brand Logos"
-                width={497}
-                height={48}
-                style={{ width: "497px", height: "48px" }}
-                className={styles.brandLogosSvg}
-              />
+              {TESTIMONIAL_LOGOS.map((logo) => {
+                const isActive = activeLogoId === logo.id;
+                return (
+                  <div
+                    key={logo.id}
+                    className={`${styles.brandLogoItem} ${isActive ? styles.activeLogo : ""}`}
+                    onMouseEnter={() => setActiveLogoId(logo.id)}
+                    title={logo.name}
+                  >
+                    <Image
+                      src={logo.src}
+                      alt={logo.name}
+                      width={48}
+                      height={48}
+                      style={{ width: "48px", height: "48px" }}
+                      className={styles.brandSvg}
+                    />
+                  </div>
+                );
+              })}
             </div>
 
             <Link href="#all-customers" className={styles.meetLink} id="meet-all-customers-link">

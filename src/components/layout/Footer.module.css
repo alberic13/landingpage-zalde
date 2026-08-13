@@ -45,11 +45,29 @@
 .socialIcons {
   display: flex;
   align-items: center;
+  gap: 16px;
   margin-top: 8px;
 }
 
-.socialIconsSvg {
-  width: 176px;
+.socialLink {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  transition: transform 0.25s cubic-bezier(0.4, 0, 0.2, 1), background-color 0.25s ease, box-shadow 0.25s ease, filter 0.25s ease;
+  text-decoration: none;
+}
+
+.socialLink:hover {
+  background-color: var(--brand-primary);
+  transform: translateY(-4px) scale(1.18);
+  box-shadow: 0px 4px 14px rgba(76, 175, 79, 0.5);
+}
+
+.socialSvg {
+  width: 32px;
   height: 32px;
   display: block;
 }
