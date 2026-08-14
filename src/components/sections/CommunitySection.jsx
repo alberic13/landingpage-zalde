@@ -4,20 +4,55 @@ import styles from "./CommunitySection.module.css";
 const COMMUNITY_CARDS = [
   {
     id: 1,
-    title: "Membership Organisations",
-    description: "Our membership management software provides full automation of membership renewals and payments",
+    title: (
+      <>
+        Membership <br /> Organisations
+      </>
+    ),
+    rawTitle: "Membership Organisations",
+    description: (
+      <>
+        Our membership management software <br />
+        provides full automation of membership <br />
+        renewals and payments
+      </>
+    ),
     iconSrc: "/images/community_icon_1.svg",
   },
   {
     id: 2,
-    title: "National Associations",
-    description: "Our membership management software provides full automation of membership renewals and payments",
+    title: (
+      <>
+        National <br /> Associations
+      </>
+    ),
+    rawTitle: "National Associations",
+    description: (
+      <>
+        Our membership management <br />
+        software provides full automation of <br />
+        membership renewals and <br />
+        payments
+      </>
+    ),
     iconSrc: "/images/community_icon_2.svg",
   },
   {
     id: 3,
-    title: "Clubs And Groups",
-    description: "Our membership management software provides full automation of membership renewals and payments",
+    title: (
+      <>
+        Clubs And <br /> Groups
+      </>
+    ),
+    rawTitle: "Clubs And Groups",
+    description: (
+      <>
+        Our membership management <br />
+        software provides full automation of <br />
+        membership renewals and <br />
+        payments
+      </>
+    ),
     iconSrc: "/images/community_icon_3.svg",
   },
 ];
@@ -28,7 +63,8 @@ export default function CommunitySection() {
       <div className={`container ${styles.communityContainer}`}>
         <div className={styles.headerArea}>
           <h2 className={styles.sectionTitle}>
-            Manage your entire community in a single system
+            Manage your entire community <br />
+            in a single system
           </h2>
           <p className={styles.sectionSubtitle}>
             Who is Nextcent suitable for?
@@ -41,7 +77,7 @@ export default function CommunitySection() {
               <div className={styles.iconWrapper}>
                 <Image
                   src={card.iconSrc}
-                  alt={card.title}
+                  alt={card.rawTitle}
                   width={65}
                   height={56}
                   style={{ width: "65px", height: "56px" }}
