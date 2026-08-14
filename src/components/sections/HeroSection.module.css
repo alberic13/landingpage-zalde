@@ -20,11 +20,14 @@
 }
 
 .heroTitle {
-  font-size: 64px;
+  width: 657px;
+  max-width: 100%;
+  font-family: var(--font-inter), 'Inter', sans-serif;
+  font-style: normal;
   font-weight: 600;
+  font-size: 64px;
   line-height: 76px;
-  color: var(--neutral-d-grey);
-  letter-spacing: -0.5px;
+  color: #4D4D4D;
 }
 
 .greenText {
@@ -32,11 +35,14 @@
 }
 
 .heroSubtitle {
-  font-size: 16px;
+  width: 657px;
+  max-width: 100%;
+  font-family: var(--font-inter), 'Inter', sans-serif;
+  font-style: normal;
   font-weight: 400;
+  font-size: 16px;
   line-height: 24px;
-  color: var(--neutral-grey);
-  margin-top: -16px;
+  color: #717171;
 }
 
 .heroCta {
