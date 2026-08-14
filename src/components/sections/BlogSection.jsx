@@ -55,7 +55,7 @@ export default function BlogSection() {
                 <h3 className={styles.postTitle}>{post.title}</h3>
                 <Link href={post.link} className={styles.readMoreLink} id={`blog-readmore-${post.id}`}>
                   <span>Readmore</span>
-                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
                     <path d="M5 12H19M19 12L12 5M19 12L12 19" stroke="#4CAF4F" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
                   </svg>
                 </Link>

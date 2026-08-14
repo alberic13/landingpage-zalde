@@ -25,7 +25,7 @@ export default function UnlockSection() {
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet justo ipsum. Sed accumsan quam vitae est varius fringilla. Pellentesque placerat vestibulum lorem sed porta. Nullam mattis tristique iaculis. Nullam pulvinar sit amet risus pretium auctor. Etiam quis massa pulvinar, aliquam quam vitae, tempus sem. Donec elementum pulvinar odio.
           </p>
           <div className={styles.ctaWrapper}>
-            <Link href="#learn-more" className="btn btn-primary" id="unlock-learn-more-btn">
+            <Link href="#learn-more" className={styles.learnMoreBtn} id="unlock-learn-more-btn">
               Learn More
             </Link>
           </div>

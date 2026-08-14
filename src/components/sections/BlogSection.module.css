@@ -18,9 +18,9 @@
 }
 
 .sectionSubtitle {
-  font-size: 14px;
+  font-size: 16px;
   color: var(--neutral-grey);
-  line-height: 1.6;
+  line-height: 24px;
 }
 
 .postsGrid {
@@ -67,7 +67,7 @@
   margin-top: -80px;
   width: 88%;
   background-color: var(--neutral-silver);
-  padding: 24px 16px;
+  padding: 16px;
   border-radius: var(--radius-md);
   box-shadow: var(--shadow-floating-card);
   display: flex;
@@ -83,10 +83,10 @@
 }
 
 .postTitle {
-  font-size: 18px;
+  font-size: 20px;
   font-weight: 600;
   color: var(--neutral-grey);
-  line-height: 1.4;
+  line-height: 28px;
   text-align: center;
 }
 
@@ -94,8 +94,9 @@
   display: inline-flex;
   align-items: center;
   gap: 8px;
-  font-size: 16px;
+  font-size: 20px;
   font-weight: 600;
+  line-height: 28px;
   color: var(--brand-primary);
   transition: transform var(--transition-fast);
 }
