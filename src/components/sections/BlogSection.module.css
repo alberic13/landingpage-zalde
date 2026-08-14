@@ -7,20 +7,45 @@
 }
 
 .headerArea {
-  max-width: 620px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  max-width: 1110px;
+  width: 100%;
 }
 
 .sectionTitle {
-  font-size: 36px;
+  width: 1110px;
+  max-width: 100%;
+  font-family: var(--font-inter), 'Inter', sans-serif;
+  font-style: normal;
   font-weight: 600;
-  color: var(--neutral-d-grey);
-  margin-bottom: 8px;
+  font-size: 36px;
+  line-height: 44px;
+  text-align: center;
+  color: #4D4D4D;
+  align-self: stretch;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+  margin-bottom: 0;
 }
 
 .sectionSubtitle {
+  width: 628px;
+  max-width: 100%;
+  font-family: var(--font-inter), 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 400;
   font-size: 16px;
-  color: var(--neutral-grey);
   line-height: 24px;
+  text-align: center;
+  color: #717171;
+  margin: 0 auto;
+  flex: none;
+  order: 1;
+  flex-grow: 0;
 }
 
 .postsGrid {
