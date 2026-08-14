@@ -27,7 +27,7 @@ export default function HeroSection() {
             alt="Nexcent Hero Illustration"
             width={391}
             height={407}
-            style={{ width: "auto", height: "auto" }}
+            style={{ width: "391px", height: "407px" }}
             priority
             className={styles.heroImage}
           />
