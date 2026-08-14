@@ -183,6 +183,12 @@
     height: 260px;
   }
 
+  .quoteText,
+  .authorName,
+  .authorRole {
+    width: 100%;
+  }
+
   .brandsRow {
     justify-content: center;
     gap: 24px;

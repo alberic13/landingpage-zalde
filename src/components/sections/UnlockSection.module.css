@@ -105,6 +105,10 @@
     gap: 32px;
   }
 
+  .contentColumn {
+    align-items: center;
+  }
+
   .imageColumn {
     width: 100%;
     max-width: 320px;
@@ -118,6 +122,12 @@
   }
 
   .title {
+    width: 100%;
     font-size: 28px;
+    line-height: 36px;
+  }
+
+  .description {
+    width: 100%;
   }
 }
