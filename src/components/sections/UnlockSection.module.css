@@ -2,55 +2,96 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 64px;
+  gap: 96px;
 }
 
 .imageColumn {
-  flex: 1;
+  margin: 0 auto;
+  width: 442px;
+  height: 433px;
   display: flex;
   justify-content: center;
+  align-items: center;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
 }
 
 .illustration {
-  width: 100%;
-  max-width: 440px;
-  height: auto;
+  width: 442px;
+  height: 433px;
   object-fit: contain;
 }
 
 .textColumn {
   flex: 1;
-  max-width: 600px;
+  max-width: 601px;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.textBox {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  width: 100%;
 }
 
 .title {
-  font-size: 36px;
+  width: 601px;
+  max-width: 100%;
+  font-family: var(--font-inter), 'Inter', sans-serif;
+  font-style: normal;
   font-weight: 600;
-  color: var(--neutral-d-grey);
-  line-height: 1.25;
-  margin-bottom: 16px;
+  font-size: 36px;
+  line-height: 44px;
+  color: #4D4D4D;
+  align-self: stretch;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+  margin-bottom: 0;
 }
 
 .description {
+  width: 601px;
+  max-width: 100%;
+  font-family: var(--font-inter), 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 400;
   font-size: 14px;
-  color: var(--neutral-grey);
-  line-height: 1.6;
-  margin-bottom: 32px;
+  line-height: 20px;
+  color: #717171;
+  align-self: stretch;
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+  margin-bottom: 0;
 }
 
 .learnMoreBtn {
   display: inline-flex;
-  align-items: center;
+  flex-direction: row;
   justify-content: center;
+  align-items: center;
   padding: 14px 32px;
-  background-color: var(--brand-primary);
+  gap: 10px;
+  width: max-content;
+  min-width: 151px;
+  height: 52px;
+  white-space: nowrap;
+  background-color: #4CAF4F;
+  border-radius: 4px;
   color: var(--neutral-white);
   font-size: 16px;
   font-weight: 500;
   line-height: 24px;
-  border-radius: 4px;
   text-decoration: none;
   transition: background-color var(--transition-fast);
+  flex: none;
+  order: 1;
+  flex-grow: 0;
 }
 
 .learnMoreBtn:hover {
@@ -64,11 +105,19 @@
     gap: 32px;
   }
 
-  .title {
-    font-size: 28px;
+  .imageColumn {
+    width: 100%;
+    max-width: 320px;
+    height: auto;
   }
 
   .illustration {
+    width: 100%;
     max-width: 320px;
+    height: auto;
+  }
+
+  .title {
+    font-size: 28px;
   }
 }
