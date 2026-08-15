@@ -20,10 +20,14 @@ export default function UnlockSection() {
         <div className={styles.textColumn}>
           <div className={styles.textBox}>
             <h2 className={styles.title}>
-              The unseen of spending three years at Pixelgrade
+              The unseen of spending three <br />
+              years at Pixelgrade
             </h2>
             <p className={styles.description}>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet justo ipsum. Sed accumsan quam vitae est varius fringilla. Pellentesque placerat vestibulum lorem sed porta. Nullam mattis tristique iaculis. Nullam pulvinar sit amet risus pretium auctor. Etiam quis massa pulvinar, aliquam quam vitae, tempus sem. Donec elementum pulvinar odio.
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet justo ipsum. Sed <br />
+              accumsan quam vitae est varius fringilla. Pellentesque placerat vestibulum lorem sed <br />
+              porta. Nullam mattis tristique iaculis. Nullam pulvinar sit amet risus pretium auctor. Etiam <br />
+              quis massa pulvinar, aliquam quam vitae, tempus sem. Donec elementum pulvinar odio.
             </p>
           </div>
           <div className={styles.ctaWrapper}>
