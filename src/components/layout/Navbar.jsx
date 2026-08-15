@@ -18,7 +18,6 @@ export default function Navbar() {
             alt="Nexcent Logo Icon"
             width={35}
             height={24}
-            style={{ width: "35px", height: "auto" }}
             className={styles.logoSvg}
           />
           <span className={styles.logoText}>Nexcent</span>
