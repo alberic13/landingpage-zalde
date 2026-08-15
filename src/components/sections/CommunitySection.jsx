@@ -49,8 +49,7 @@ const COMMUNITY_CARDS = [
       <>
         Our membership management <br />
         software provides full automation of <br />
-        membership renewals and <br />
-        payments
+        membership renewals and payments
       </>
     ),
     iconSrc: "/images/community_icon_3.svg",
