@@ -22,7 +22,7 @@
 
 .textColumn {
   flex: 1;
-  max-width: 601px;
+  max-width: 660px;
   display: flex;
   flex-direction: column;
   gap: 32px;
@@ -36,7 +36,7 @@
 }
 
 .title {
-  width: 601px;
+  width: 660px;
   max-width: 100%;
   font-family: var(--font-inter), 'Inter', sans-serif;
   font-style: normal;
@@ -52,13 +52,14 @@
 }
 
 .description {
-  width: 601px;
+  width: 660px;
   max-width: 100%;
   font-family: var(--font-inter), 'Inter', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
   line-height: 20px;
+  letter-spacing: 0%;
   color: #717171;
   align-self: stretch;
   flex: none;
