@@ -20,7 +20,8 @@ export default function CalendarSection() {
         <div className={styles.textColumn}>
           <div className={styles.textBox}>
             <h2 className={styles.title}>
-              How to design your site footer like we did
+              How to design your site footer like <br />
+              we did
             </h2>
             <p className={styles.description}>
               Donec a eros justo. Fusce egestas tristique ultrices. Nam tempor, augue nec tincidunt <br />
