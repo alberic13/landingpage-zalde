@@ -37,9 +37,9 @@
 
 .copyrightBox {
   font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
   color: var(--neutral-silver);
-  line-height: 1.5;
-  opacity: 0.9;
 }
 
 .socialIcons {
@@ -75,6 +75,7 @@
 .colTitle {
   font-size: 20px;
   font-weight: 600;
+  line-height: 28px;
   color: var(--neutral-white);
   margin-bottom: 24px;
 }
@@ -88,10 +89,11 @@
 
 .linksList a {
   font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
   color: var(--neutral-silver);
-  opacity: 0.9;
   text-decoration: none;
-  transition: opacity var(--transition-fast), color var(--transition-fast);
+  transition: color var(--transition-fast);
 }
 
 .linksList a:hover {
