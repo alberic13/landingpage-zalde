@@ -150,32 +150,16 @@
   transform: translateX(4px);
 }
 
-@media (max-width: 1200px) {
-  .logosList {
-    gap: 24px;
-  }
-}
-
-@media (max-width: 1024px) {
-  .testimonialContainer {
-    gap: 40px;
-  }
-
-  .avatarWrapper {
-    width: 280px;
-    height: 280px;
-  }
-
-  .logosList {
-    gap: 20px;
-  }
-}
-
-@media (max-width: 868px) {
+@media (max-width: 1080px) {
   .testimonialContainer {
     flex-direction: column;
     text-align: center;
     gap: 32px;
+  }
+
+  .contentCol {
+    max-width: 100%;
+    align-items: center;
   }
 
   .avatarWrapper {
@@ -187,11 +171,14 @@
   .authorName,
   .authorRole {
     width: 100%;
+    text-align: center;
+    justify-content: center;
   }
 
   .brandsRow {
     justify-content: center;
-    gap: 24px;
+    flex-direction: column;
+    gap: 20px;
   }
 
   .logosList {

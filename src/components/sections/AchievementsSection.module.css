@@ -102,7 +102,7 @@
   color: var(--neutral-grey);
 }
 
-@media (max-width: 868px) {
+@media (max-width: 1080px) {
   .achievementsContainer {
     flex-direction: column;
     text-align: center;
@@ -114,20 +114,20 @@
   }
 
   .title {
-    font-size: 28px;
+    font-size: 32px;
   }
 
   .rightGrid {
     width: 100%;
-    max-width: 320px;
+    max-width: 540px;
     margin: 0 auto;
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(2, 1fr);
     gap: 24px;
   }
 
   .statItem {
     justify-content: flex-start;
-    padding: 8px 16px;
+    padding: 8px 12px;
   }
 
   .statText {
@@ -135,8 +135,9 @@
   }
 }
 
-@media (max-width: 360px) {
+@media (max-width: 580px) {
   .rightGrid {
-    max-width: 100%;
+    grid-template-columns: 1fr;
+    max-width: 320px;
   }
 }

@@ -106,18 +106,7 @@
   opacity: 1;
 }
 
-@media (max-width: 1024px) {
-  .heroContainer {
-    gap: 48px;
-  }
-
-  .heroTitle {
-    font-size: 48px;
-    line-height: 58px;
-  }
-}
-
-@media (max-width: 868px) {
+@media (max-width: 1080px) {
   .heroSection {
     padding: 48px 0;
   }
@@ -135,8 +124,8 @@
 
   .heroTitle {
     width: 100%;
-    font-size: 36px;
-    line-height: 44px;
+    font-size: 40px;
+    line-height: 48px;
   }
 
   .heroSubtitle {
@@ -146,13 +135,13 @@
 
   .heroImageWrapper {
     width: 100%;
-    max-width: 320px;
+    max-width: 360px;
     height: auto;
   }
 
   .heroImage {
     width: 100%;
-    max-width: 320px;
+    max-width: 360px;
     height: auto;
   }
 }
