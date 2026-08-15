@@ -31,7 +31,9 @@ export default function BlogSection() {
         <div className={styles.headerArea}>
           <h2 className={styles.sectionTitle}>Caring is the new marketing</h2>
           <p className={styles.sectionSubtitle}>
-            The Nextcent blog is the best place to read about the latest membership insights, trends and more. See who&apos;s joining the community, read about how our community are increasing their membership income and lot&apos;s more.
+            The Nexcent blog is the best place to read about the latest membership insights, <br />
+            trends and more. See who&apos;s joining the community, read about how our community <br />
+            are increasing their membership income and lot&apos;s more.
           </p>
         </div>
 
