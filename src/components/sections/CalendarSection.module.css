@@ -108,8 +108,12 @@
     gap: 32px;
   }
 
-  .contentColumn {
+  .textColumn {
     align-items: center;
+  }
+
+  .ctaWrapper {
+    justify-content: center;
   }
 
   .imageColumn {
