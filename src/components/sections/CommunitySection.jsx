@@ -12,9 +12,9 @@ const COMMUNITY_CARDS = [
     rawTitle: "Membership Organisations",
     description: (
       <>
-        Our membership management software <br />
-        provides full automation of membership <br />
-        renewals and payments
+        Our membership management <br />
+        software provides full automation of <br />
+        membership renewals and payments
       </>
     ),
     iconSrc: "/images/community_icon_1.svg",
