@@ -62,10 +62,11 @@ export default function BlogSection() {
               <div className={styles.imageWrapper}>
                 <Image
                   src={post.image}
-                  alt={post.title}
+                  alt={typeof post.title === "string" ? post.title : "Blog post"}
                   fill
                   loading="lazy"
                   sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 368px"
+                  style={{ objectFit: "fill", objectPosition: "center" }}
                   className={styles.cardImage}
                 />
               </div>
