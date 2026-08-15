@@ -5,19 +5,37 @@ import styles from "./BlogSection.module.css";
 const BLOG_POSTS = [
   {
     id: 1,
-    title: "Creating Streamlined Safeguarding Processes with OneRen",
+    title: (
+      <>
+        Creating Streamlined <br />
+        Safeguarding Processes with <br />
+        OneRen
+      </>
+    ),
     image: "/images/blog_1.png",
     link: "#blog-1",
   },
   {
     id: 2,
-    title: "What are your safeguarding responsibilities and how can you manage them?",
+    title: (
+      <>
+        What are your safeguarding <br />
+        responsibilities and how can <br />
+        you manage them?
+      </>
+    ),
     image: "/images/blog_2-7ba33a.png",
     link: "#blog-2",
   },
   {
     id: 3,
-    title: "Revamping the Membership Model with Triathlon Australia",
+    title: (
+      <>
+        Revamping the Membership <br />
+        Model with Triathlon <br />
+        Australia
+      </>
+    ),
     image: "/images/blog_3.png",
     link: "#blog-3",
   },
