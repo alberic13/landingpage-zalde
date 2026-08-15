@@ -95,6 +95,7 @@
   text-align: center;
   color: #4D4D4D;
   margin-bottom: 8px;
+  white-space: pre-line;
 }
 
 .cardDescription {
@@ -105,6 +106,7 @@
   line-height: 20px;
   text-align: center;
   color: #717171;
+  white-space: pre-line;
 }
 
 @media (max-width: 1024px) {

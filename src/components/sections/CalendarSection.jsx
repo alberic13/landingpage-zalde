@@ -10,9 +10,8 @@ export default function CalendarSection() {
           <Image
             src="/images/calendar_illustration.svg"
             alt="Mobile Login Pana Illustration"
-            width={441.53}
-            height={433.4}
-            style={{ width: "441.53px", height: "433.4px" }}
+            width={442}
+            height={433}
             className={styles.illustration}
           />
         </div>

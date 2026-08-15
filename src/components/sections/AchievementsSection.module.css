@@ -23,6 +23,10 @@
   margin-bottom: 8px;
 }
 
+.greenText {
+  color: var(--brand-primary);
+}
+
 .subtitle {
   font-family: var(--font-inter), 'Inter', sans-serif;
   font-style: normal;

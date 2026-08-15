@@ -35,7 +35,6 @@ export default function ClientsSection() {
                   alt={client.name}
                   width={48}
                   height={48}
-                  style={{ width: "48px", height: "48px" }}
                   className={styles.clientSvg}
                 />
               </div>

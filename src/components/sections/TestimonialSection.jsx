@@ -27,7 +27,6 @@ export default function TestimonialSection() {
             alt="Tesla Emblem"
             width={326}
             height={326}
-            style={{ width: "100%", height: "100%" }}
             className={styles.avatar}
           />
         </div>
@@ -61,7 +60,6 @@ export default function TestimonialSection() {
                       alt={logo.name}
                       width={48}
                       height={48}
-                      style={{ width: "48px", height: "48px" }}
                       className={styles.brandSvg}
                     />
                   </div>

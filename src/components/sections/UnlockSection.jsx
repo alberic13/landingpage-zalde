@@ -12,7 +12,6 @@ export default function UnlockSection() {
             alt="Pixelgrade Story Illustration"
             width={442}
             height={433}
-            style={{ width: "442px", height: "433px" }}
             className={styles.illustration}
           />
         </div>

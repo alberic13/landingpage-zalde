@@ -5,37 +5,19 @@ import styles from "./BlogSection.module.css";
 const BLOG_POSTS = [
   {
     id: 1,
-    title: (
-      <>
-        Creating Streamlined <br />
-        Safeguarding Processes with <br />
-        OneRen
-      </>
-    ),
+    title: "Creating Streamlined\nSafeguarding Processes with\nOneRen",
     image: "/images/blog_1.png",
     link: "#blog-1",
   },
   {
     id: 2,
-    title: (
-      <>
-        What are your safeguarding <br />
-        responsibilities and how can <br />
-        you manage them?
-      </>
-    ),
+    title: "What are your safeguarding\nresponsibilities and how can\nyou manage them?",
     image: "/images/blog_2-7ba33a.png",
     link: "#blog-2",
   },
   {
     id: 3,
-    title: (
-      <>
-        Revamping the Membership <br />
-        Model with Triathlon <br />
-        Australia
-      </>
-    ),
+    title: "Revamping the Membership\nModel with Triathlon\nAustralia",
     image: "/images/blog_3.png",
     link: "#blog-3",
   },
@@ -62,7 +44,7 @@ export default function BlogSection() {
               <div className={styles.imageWrapper}>
                 <Image
                   src={post.image}
-                  alt={typeof post.title === "string" ? post.title : "Blog post"}
+                  alt={post.title.replace(/\n/g, " ")}
                   fill
                   loading="lazy"
                   sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 368px"

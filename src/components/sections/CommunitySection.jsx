@@ -4,54 +4,20 @@ import styles from "./CommunitySection.module.css";
 const COMMUNITY_CARDS = [
   {
     id: 1,
-    title: (
-      <>
-        Membership <br /> Organisations
-      </>
-    ),
-    rawTitle: "Membership Organisations",
-    description: (
-      <>
-        Our membership management <br />
-        software provides full automation of <br />
-        membership renewals and payments
-      </>
-    ),
+    title: "Membership\nOrganisations",
+    description: "Our membership management\nsoftware provides full automation of\nmembership renewals and payments",
     iconSrc: "/images/community_icon_1.svg",
   },
   {
     id: 2,
-    title: (
-      <>
-        National <br /> Associations
-      </>
-    ),
-    rawTitle: "National Associations",
-    description: (
-      <>
-        Our membership management <br />
-        software provides full automation of <br />
-        membership renewals and <br />
-        payments
-      </>
-    ),
+    title: "National\nAssociations",
+    description: "Our membership management\nsoftware provides full automation of\nmembership renewals and\npayments",
     iconSrc: "/images/community_icon_2.svg",
   },
   {
     id: 3,
-    title: (
-      <>
-        Clubs And <br /> Groups
-      </>
-    ),
-    rawTitle: "Clubs And Groups",
-    description: (
-      <>
-        Our membership management <br />
-        software provides full automation of <br />
-        membership renewals and payments
-      </>
-    ),
+    title: "Clubs And\nGroups",
+    description: "Our membership management\nsoftware provides full automation of\nmembership renewals and payments",
     iconSrc: "/images/community_icon_3.svg",
   },
 ];
@@ -76,10 +42,9 @@ export default function CommunitySection() {
               <div className={styles.iconWrapper}>
                 <Image
                   src={card.iconSrc}
-                  alt={card.rawTitle}
+                  alt={card.title.replace("\n", " ")}
                   width={65}
                   height={56}
-                  style={{ width: "65px", height: "56px" }}
                   className={styles.cardIconSvg}
                 />
               </div>

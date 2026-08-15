@@ -7,12 +7,16 @@ import styles from "./Footer.module.css";
 
 export default function Footer() {
   const [email, setEmail] = useState("");
+  const [isSubmitted, setIsSubmitted] = useState(false);
 
   const handleSubmit = (e) => {
     e.preventDefault();
     if (email) {
-      alert(`Thank you for subscribing with: ${email}`);
+      setIsSubmitted(true);
       setEmail("");
+      setTimeout(() => {
+        setIsSubmitted(false);
+      }, 4000);
     }
   };
 
@@ -27,7 +31,6 @@ export default function Footer() {
               alt="Nexcent Logo Icon"
               width={44}
               height={30}
-              style={{ width: "44px", height: "auto" }}
               className={styles.logoSvg}
             />
             <span className={styles.logoText}>Nexcent</span>
@@ -150,6 +153,9 @@ export default function Footer() {
               </svg>
             </button>
           </form>
+          {isSubmitted && (
+            <p className={styles.successMessage}>Thank you for subscribing!</p>
+          )}
         </div>
       </div>
     </footer>

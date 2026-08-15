@@ -96,7 +96,7 @@ export default function AchievementsSection() {
         <div className={styles.leftCol}>
           <h2 className={styles.title}>
             Helping a local <br />
-            <span className="text-primary-green">business reinvent itself</span>
+            <span className={styles.greenText}>business reinvent itself</span>
           </h2>
           <p className={styles.subtitle}>
             We reached here with our hard work and dedication
@@ -112,7 +112,6 @@ export default function AchievementsSection() {
                   alt={stat.label}
                   width={48}
                   height={48}
-                  style={{ width: "48px", height: "48px" }}
                   className={styles.statIconSvg}
                 />
               </div>
